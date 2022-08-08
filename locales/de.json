@@ -1,0 +1,9 @@
+{
+  "wifiqr": {
+    "config": {
+      "title": "WIFI-QR-Code-Generator",
+      "wifi ssid": "SSID",
+      "wifi password": "Passwort"
+    }
+  }
+}

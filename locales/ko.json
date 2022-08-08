@@ -1,0 +1,9 @@
+{
+  "wifiqr": {
+    "config": {
+      "title": "WIFI QR 코드 생성기",
+      "wifi ssid": "SSID",
+      "wifi password": "비밀번호"
+    }
+  }
+}

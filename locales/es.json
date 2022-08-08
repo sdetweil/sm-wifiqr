@@ -1,0 +1,9 @@
+{
+  "wifiqr": {
+    "config": {
+      "title": "Generador de código QR WIFI",
+      "wifi ssid": "SSID",
+      "wifi password": "Clave"
+    }
+  }
+}

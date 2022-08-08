@@ -1,0 +1,42 @@
+ {
+	 "schema":{
+	 	"wifiqr":{
+		 	"type": "object",
+				"title": "{{title}}",
+				"properties": {
+					"ssid": {
+						"type": "string",
+						"title": "{{wifi ssid}}"
+					},
+					"pw": {
+						"type": "string",
+						"title": "{{wifi password}}"
+					}				
+				}		
+		}		
+	 },
+	"form": [
+		{
+			"type": "fieldset",
+			"title": "{{title}}",
+			"expandable": true,
+			"order": 0,
+			"items": [
+				{
+				"type": "section",
+				"items": [
+					{
+						"title":"{{wifi ssid}}",
+						"key": "wifiqr.ssid"
+					},
+					{
+						"title":"{{wifi password}}",
+						"key": "wifiqr.pw",
+						"type":"password"
+					}
+				]
+			}
+		]
+		}
+	]
+ }

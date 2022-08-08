@@ -1,0 +1,13 @@
+/* plugin.css */
+
+.wifiqrc {
+	width: 100px !important;
+	height: 100px !important;
+	margin-left: 60px;
+}
+#wifiqr_message {
+	margin-left: 30px;
+	color:  white;
+	font-weight: bold;
+	font-size:  calc( 25px * var(--scale-factor));
+}

@@ -1,0 +1,15 @@
+#!/bin/bash
+# copy the git pre-commit hook file
+cp .pre-commit .git/hooks/pre-commit
+# get size of the built in english local file
+fs=$(stat -c%s ../../app/locales/en.json)
+# is smaller that 1000 bytes, this is the new nls layout
+if [ $fs -lt 1000 ]; then 
+  # erase the constructed local files, forces them to be rebuilt
+  rm ../../app/locales/??c.json 2>/dev/null
+  # copy our nls based schema file
+  cp config.schema.json.nls config.schema.json
+else
+  # copy our non-nls based schema file
+  cp config.json.no-nls config.schema.json
+fi 
